@@ -286,7 +286,7 @@ bot.on("message", async (msg) => {
     // ТРИГГЕРЫ
     // ===========
     const isReplyToBot = msg.reply_to_message?.from?.id === botId;
-    const triggers = ["скаперс", "скаперсик", "ваня"];
+    const triggers = ["скаперс", "скаперсик", "скаперсон"];
     const triggered = triggers.some(w => lower.includes(w));
 
     if (!triggered && !isReplyToBot) return;
